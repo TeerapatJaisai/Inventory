@@ -36,12 +36,20 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="orders"
+        options={{
+          title: 'Orders',
+          tabBarIcon: () => <Text style={{ fontSize: 20 }}>📦</Text>,
+        }}
+      />
+      <Tabs.Screen
         name="profile"
         options={{
           title: 'Profile',
           tabBarIcon: () => <Text style={{ fontSize: 20 }}>👤</Text>,
         }}
       />
+      <Tabs.Screen name="claim" options={{ title: 'Claim', tabBarIcon: () => <Text style={{ fontSize: 20 }}>🛡️</Text> }} />
     </Tabs>
   );
 }
